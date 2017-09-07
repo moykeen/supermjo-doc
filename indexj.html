@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="graph plotting tool for macOS"/>
+	<meta name="keywords" content="mjograph,graph,plot"/>
+	<meta name="author" content="Makoto Tanahashi"/>
+
+	<title>Super Mjograph</title>
+
+	<!-- CSS -->
+	<!--<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">-->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+	<!--<link rel="stylesheet" href="assets/css/animate.css">-->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/flexslider/flexslider.css">
+	<link rel="stylesheet" href="assets/css/form-elements.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-queries.css">
+
+	<!-- Javascript -->
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
+	<script src="assets/js/jquery.backstretch.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/retina-1.1.0.min.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/flexslider/jquery.flexslider-min.js"></script>
+	<!--<script src="assets/js/jflickrfeed.min.js"></script>-->
+	<script src="assets/js/masonry.pkgd.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script src="assets/js/jquery.ui.map.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+
+	<script type="text/javascript" language="javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="http://cdn.datatables.net/plug-ins/a5734b29083/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+	<script type="text/javascript" charset="utf8" src="assets/js/jquery.dataTables.columnFilter.js"></script>
+
+
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Favicon and touch icons -->
+	<!--<link rel="shortcut icon" href="assets/ico/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">-->
+
+</head>
+
+<body>
+
+	<!-- Top menu -->
+	<nav class="navbar" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Andia - a super cool design agency...</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="top-navbar-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active">
+						<a href="index.html"><i class="fa fa-home"></i><br/>TOP</a>
+					</li>
+					<li>
+						<a href="index.html"><i class="fa fa-table"></i><br/>GitHub</a>
+					</li>
+					<li>
+						<a href="index.html"><i class="fa fa-comments"></i><br/>Forum</a>
+					</li>
+					<li>
+						<a href="index-2.html"><i class="fa fa-pencil"></i><br/>Wiki</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Slider -->
+	<div class="slider-container">
+		<div class="container">
+			<div class="row">
+
+
+				<div class="col-sm-10 col-sm-offset-1 slider">
+					<div class="flexslider">
+						<ul class="slides">
+							<li data-thumb="assets/img/slider/sc1.png">
+								<img src="assets/img/slider/sc1.png">
+								<!-- <div class="flex-caption">
+								研究者のためのプロットツール
+							</div> -->
+						</li>
+						<li data-thumb="assets/img/slider/sc1.png">
+							<img src="assets/img/slider/sc1.png">
+							<!-- <div class="flex-caption">
+								やりたいことがすぐにわかるインターフェイス
+							</div> -->
+						</li>
+						<li data-thumb="assets/img/slider/s1.jpg">
+							<img src="assets/img/slider/s1.jpg">
+							<!-- <div class="flex-caption">
+								論文に載せられる高品質のグラフを作成
+							</div> -->
+						</li>
+						<li data-thumb="assets/img/slider/s1.jpg">
+							<img src="assets/img/slider/s1.jpg">
+							<!-- <div class="flex-caption">
+								ビッグデータ時代の大規模データも難なくプロット
+							</div> -->
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<div class="row">
+		<button type="button" class="btn btn-primary btn-lg">Download ver-0.1 (beta)</button>
+		</div>
+<br/>
+
+	</div>
+</div>
+
+
+
+
+<!-- Services -->
+<div class="services-container">
+	<div class="container">
+		<!-- <div class="row"> -->
+			<!-- <div class="col-sm-12 testimonials-title"> -->
+				<!-- <h2>Features</h2> -->
+			<!-- </div> -->
+		<!-- </div> -->
+
+		<div class="row">
+
+			<div class="col-sm-3">
+				<div class="service wow fadeInUp">
+					<div class="service-icon"><i class="fa fa-child"></i></div>
+					<h3>新しいmjograph</h3>
+					<!-- <p> -->
+					<p class="feat-bun">
+					10年前に生まれた<a href="">mjograph</a>は、何度もバージョンアップを重ねることで完成形に至り、
+					ありがたいことに様々な分野の研究者から高い評判を頂くようになりました。
+					その一方で、徐々に時代に合わない点も見られるようになり、一から作り直すことを決意しました。
+					このたびリリースするSuper-Mjographは、Swiftで書かれたMacネイティブのアプリです。
+					mjographで慣れ親しんだ操作感はそのままに、数々の新機能をお楽しみ下さい。
+
+					</p>
+				</div>
+			</div>
+
+
+
+			<div class="col-sm-9">
+				<div class="service wow fadeInUp">
+					<div class="service-icon"><i class="fa fa-pagelines"></i></div>
+					<h3>設計方針・思想</h3>
+						<dl class="feat-bun">
+							<dt>研究者やエンジニアにとって使いやすいこと</dt>
+							<dd>エクセルは身近なグラフ作成ツールですが、研究者向けとは言えません。
+								Super-Mjographは、一研究者である作者が、研究者にとって使いやすいように設計したアプリケーションです。</dd>
+							<br/>
+
+							<dt>GUIで直感的にプロットする</dt>
+							<dd>gnuplotやmatplotlibなどのコマンド型のツールで疲弊している方々に、
+								GUIでサクサクっとプロットするためのソリューションを提供します。
+								コマンドを調べる手間を省いて研究を加速しましょう。
+							</dd>
+							<br/>
+
+							<dt>最低限のコマンドインターフェイスも備える</dt>
+							<dd>プログラムの出力を直接描画したいときなど、コマンド操作が有効なのも事実です。
+							Super-Mjographではコマンドインターフェイスも備えていますので、コマンドからデータを読み込んで、あとは
+							GUIでカスタマイズという使い方ができます。
+							</dd>
+							<br/>
+
+							<dt>可視化までの操作ステップを最小化する</dt>
+							<dd>
+								研究とは理論と検証の繰り返しですが、
+								数値データの可視化に手間取っていては、本質的な思考に集中することができません。
+								Super-Mjographは最小限の労力でこれを実現します。
+								とりあえずデータをドロップすればグラフが描画され、その後いくらでもカスタマイズできるという設計になっています。
+							</dd>
+							<br/>
+
+							<dt>
+								見た目の美しさにこだわること
+							</dt>
+							<dd>
+								美しいグラフは見る者を惹き付けます。逆にダサいグラフは論文の評判を損なう恐れさえあります。
+								さすがに自動で完璧なグラフに仕上げることは無理ですが、
+								体裁を整える作業が苦痛にならないように配慮した設計になっています。
+							</dd>
+							<br/>
+
+							<dt>
+								安定したユーザーインターフェイス
+							</dt>
+							<dd>
+								前作mjographでインターフェイスのデザインは完成されていると思うので、今作も基本的にそれを踏襲しました。
+								今後のバージョンアップにおいても、不必要にインターフェイスを変えてユーザーを困らせるようなことはしません。
+							</dd>
+
+					</dl>
+					</div>
+				</div>
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Latest work -->
+		<div class="work-container">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="work wow fadeInUp">
+							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
+							<h3>シンプルなことはシンプルに</h3>
+							<p>普通のグラフ(折れ線 and/or マーク)を手際よく描けることが、地味ながら最大の特長です。</p>
+							<div class="work-bottom">
+								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="work wow fadeInUp">
+							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
+							<h3>複雑な作業もストレスフリーに</h3>
+							<p>グラフを美しく仕上げるためには複雑な作業を伴いますが、できるだけスムーズにできるように配慮。</p>
+							<div class="work-bottom">
+								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
+
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-sm-3">
+						<div class="work wow fadeInUp">
+							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
+							<h3>ドロー機能</h3>
+							<p>ドロー専用ソフト並みのドロー機能を備えていますので、注釈をつけるためにわざわざ別のソフトを使う必要がありません。</p>
+							<div class="work-bottom">
+								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
+
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-sm-3">
+						<div class="work wow fadeInUp">
+							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
+							<h3>数式の埋め込み</h3>
+							<p>Latexのコマンドで数式が書けます。しかも、Super-Mjograph自身で数式を認識し、Latexのインストールは一切不要。</p>
+							<div class="work-bottom">
+								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
+
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-sm-3">
+						<div class="work wow fadeInUp">
+							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
+							<h3>画像エクスポート</h3>
+							<p>画像の出力形式はPNG/EPS/PDFに対応。直接クリップボードに書き出すこともできます。</p>
+							<div class="work-bottom">
+								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="work wow fadeInUp">
+							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
+							<h3>高速レンダリングモード</h3>
+							<p>ビッグデータ時代。100万サンプルを超えるデータも低遅延で描画。<br/><br/></p>
+							<div class="work-bottom">
+								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="work wow fadeInUp">
+							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
+							<h3>関数のプロット</h3>
+							<p>数値データのプロットと合わせて関数のプロットもできます。<br/><br/></p>
+							<div class="work-bottom">
+								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="work wow fadeInUp">
+							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
+							<h3>スクリプティング</h3>
+							<p>AppleScriptを通じて操作ができます。しかもデータ読み込みは高速です。Pythonインターフェイスを公開中</p>
+							<div class="work-bottom">
+								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="work wow fadeInUp">
+							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
+							<h3>様々なプロット</h3>
+							<p>カラーマップ、バブルプロットなどなど、様々な可視化にご利用下さい。<br/><br/></p>
+							<div class="work-bottom">
+								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="work wow fadeInUp">
+							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
+							<h3>金融データにも</h3>
+							<p>時系列データのプロットにも適しています。<br/><br/></p>
+							<div class="work-bottom">
+								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<br/><br/>
+
+
+
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 footer-box wow fadeInUp">
+
+						<h4>開発フェーズ</h4>
+						<div class="footer-box-text flickr-feed">
+							<p><big>βバージョン</big><br/>Ver-0.1 will expire on 2018/1/12</p>
+						</div>
+					</div>
+
+					<div class="col-sm-3 footer-box wow fadeInUp">
+
+						<h4>リンク</h4>
+						<div class="footer-box-text">
+
+
+							<dl>
+								<dt>機能説明 <span class="glyphicon glyphicon-search"></span></dt>
+								<dd>Super-Mjogrpahの機能の紹介ページです。</dd>
+								<br/>
+								<dt>Wiki <span class="glyphicon glyphicon-user"></span></dt>
+								<dd>
+									使い方についてまとめています。
+								</dd>
+								<br/>
+								<dt>Forum <span class="glyphicon glyphicon-home"></span></dt>
+								<dd>
+									バグや機能リクエストを書いて下さい。
+								</dd>
+							</dl>
+
+
+
+						</div>
+					</div>
+
+
+					<div class="col-sm-3 footer-box wow fadeInDown">
+						<h4>価格</h4>
+						<div class="footer-box-text footer-box-text-subscribe">
+							<div class="well">
+								<dl>
+									<dt></dt><dd><strong>無料</strong></dd>
+								</dl>
+							</div>
+
+						</div>
+
+					</div>
+
+
+
+					<div class="col-sm-3 footer-box wow fadeInDown">
+						<h4>お問い合わせ</h4>
+						<div class="footer-box-text footer-box-text-contact">
+							<p>何かありましたら、<a>xxxx@ieee.org</a>まで連絡ください</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 wow fadeIn">
+						<div class="footer-border"></div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-7 footer-copyright wow fadeIn">
+						<p>(C) Makoto Tanahashi, 2017</p>
+					</div>
+
+					<!-- <div class="col-sm-5 footer-social wow fadeIn">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-pinterest"></i></a>
+					</div> -->
+
+				</div>
+			</div>
+		</footer>
+
+
+
+	</body>
+
+	</html>

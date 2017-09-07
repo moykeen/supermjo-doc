@@ -1,0 +1,76 @@
+table.appform{
+/*       border-spacing: 0;
+       width: 100%;
+*/
+}
+
+table.appform textarea{
+                        width: 100%;
+
+ }
+
+/*
+table.dataTable tr.odd { background-color: #fff }
+table.dataTable tr.even { background-color: #dee; }
+table.dataTable tr.odd td.sorting_1{ background-color: #fafafa;}
+table.dataTable tr.even td.sorting_1{ background-color: #d0e0e0; }
+
+table.dataTable td{
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding: 5px;
+	text-align: right;
+}
+
+table.dataTable tfoot th{
+	background-color: #fffcf3;
+	background-image: none;
+	padding: 10px 5px;
+	text-align: right;
+	border-bottom: none;
+	border-top: 1px solid #cccccc;
+}
+
+
+table.dataTable thead th{
+	border-top: none;
+	border-bottom: 1px solid #cccccc;
+}
+
+span.akaji{
+	color: #cc0033;
+}
+*/
+
+
+div#main-container{
+	margin: 40px 0;
+}
+
+
+
+div.fclear{
+    clear:both;
+}
+
+
+div.t_detail,div.s_detail{
+	display: none;
+}
+
+td.detail-click{
+                 text-align: center;
+}
+
+dl dd{
+       padding-left: 1em;
+ }
+
+div.modal-content{
+	text-align: left;
+}
+
+
+.feat-bun{
+  text-align: left;
+}
