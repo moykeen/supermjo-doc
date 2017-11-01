@@ -60,13 +60,13 @@
 
 
 	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-106179764-1', 'auto');
-	  ga('send', 'pageview');
+	ga('create', 'UA-106179764-1', 'auto');
+	ga('send', 'pageview');
 
 	</script>
 
@@ -117,345 +117,227 @@
 
 
 
-								<div class="col-sm-10 col-sm-offset-1 slider">
-									<div class="flexslider">
-										<ul class="slides">
-											<li data-thumb="assets/img/slider/sc1.png">
-												<img src="assets/img/slider/sc1.png">
-										</li>
-										<li data-thumb="assets/img/slider/sc2.png">
-											<img src="assets/img/slider/sc2.png">
-										</li>
-										<li data-thumb="assets/img/slider/sc3.png">
-											<img src="assets/img/slider/sc3.png">
-										</li>
-										<li data-thumb="assets/img/slider/sc4.png">
-											<img src="assets/img/slider/sc4.png">
-										</li>
-									</ul>
+				<div class="col-sm-10 col-sm-offset-1 slider">
+					<div class="flexslider">
+						<ul class="slides">
+							<li data-thumb="assets/img/slider/sc1.png">
+								<img src="assets/img/slider/sc1.png">
+							</li>
+							<li data-thumb="assets/img/slider/sc2.png">
+								<img src="assets/img/slider/sc2.png">
+							</li>
+							<li data-thumb="assets/img/slider/sc3.png">
+								<img src="assets/img/slider/sc3.png">
+							</li>
+							<li data-thumb="assets/img/slider/sc4.png">
+								<img src="assets/img/slider/sc4.png">
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+
+
+			</div>
+
+
+			<div class="row">
+				<!-- an empty column to align center -->
+				<div class="col-md-3"></div>
+				<div class="col-md-3">
+					<i class="fa fa-apple fa-2x" aria-hidden="true"></i>
+					<a href="https://sourceforge.net/projects/mjograph/files/latest/download">
+						<button type="button" class="btn btn-primary btn-lg">Download Super-Mjograph</button></a>
+					</div>
+					<div class="col-md-3">
+						<i class="fa fa-windows fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-linux fa-2x" aria-hidden="true"></i>
+						<a href="https://sourceforge.net/projects/mjograph/files/mjograph/mjograph-4.6.1/">
+							<button type="button" class="btn btn-primary btn-lg">Download Mjograph</button></a>
+							<p>こちらは古いMjographへのリンクです。Windows/Linuxを対象としています。</p>
+						</div>
+						<!-- an empty column to align center -->
+						<div class="col-md-3"></div>
+
+					</div>
+
+
+
+				</div>
+			</div>
+
+
+
+
+			<!-- Services -->
+			<div class="services-container">
+				<div class="container">
+
+
+					<div class="row">
+
+						<div class="col-sm-3">
+							<div class="service wow fadeInUp">
+								<div class="service-icon"><i class="fa fa-child"></i></div>
+								<h3>新しいmjograph</h3>
+
+								<p class="feat-bun">
+									10年前に開発が始まったmjographは完成形に至り、
+									ありがたいことに様々な分野の研究者から高い評判を頂くようになりました。
+									その一方で、徐々に時代に合わない点も見られるようになり、一から作り直すことを決意しました。
+									このたびリリースするSuper-Mjographは、Swiftで書かれたMacネイティブのアプリです。
+									mjographで慣れ親しんだ操作感はそのままに、改善された性能や数々の新機能をお楽しみ下さい。
+								</p>
+							</div>
+						</div>
+
+
+
+						<div class="col-sm-9">
+							<div class="service wow fadeInUp">
+								<div class="service-icon"><i class="fa fa-pagelines"></i></div>
+								<h3>設計方針</h3>
+								<dl class="feat-bun">
+									<dt>研究者やエンジニアにとって使いやすいこと</dt>
+									<dd>エクセルは身近なグラフ作成ツールですが、研究者向けとは言えません。
+										Super-Mjographは、一研究者である作者が、研究者にとって使いやすいように設計したアプリケーションです。</dd>
+										<br/>
+
+										<dt>GUIで直感的にプロットする</dt>
+										<dd>gnuplotやmatplotlibなどのコマンド型のツールで疲弊している方々に、
+											GUIでサクサクっとプロットするためのソリューションを提供します。
+											コマンドを調べる手間を省いて研究を加速しましょう。
+										</dd>
+										<br/>
+
+										<dt>最低限のコマンドインターフェイスも備える</dt>
+										<dd>プログラムの出力を直接描画したいときなど、コマンド操作が有効なのも事実です。
+											Super-Mjographではコマンドインターフェイスも備えていますので、コマンドからデータを読み込んで、あとは
+											GUIでカスタマイズという使い方ができます。
+										</dd>
+										<br/>
+
+										<dt>可視化までの操作ステップを最小化する</dt>
+										<dd>
+											研究とは理論と検証の繰り返しですが、
+											数値データの可視化に手間取っていては、本質的な思考に集中することができません。
+											Super-Mjographは最小限の労力でこれを実現します。
+											とりあえずデータをドロップすればグラフが描画され、その後いくらでもカスタマイズできるという設計になっています。
+										</dd>
+										<br/>
+
+										<dt>
+											見た目の美しさにこだわること
+										</dt>
+										<dd>
+											美しいグラフは見る者を惹き付けます。逆にダサいグラフは論文の評判を損なう恐れさえあります。
+											さすがに自動で完璧なグラフに仕上げることは無理ですが、
+											体裁を整える作業が苦痛にならないように配慮した設計になっています。
+										</dd>
+										<br/>
+
+										<dt>
+											安定したユーザーインターフェイス
+										</dt>
+										<dd>
+											前作mjographでインターフェイスのデザインは完成されていると思うので、今作も基本的にそれを踏襲しました。
+											今後のバージョンアップにおいても、不必要にインターフェイスを変えてユーザーを困らせるようなことはしません。
+										</dd>
+
+									</dl>
 								</div>
 							</div>
 
 
 
-
-		</div>
-
-
-		<div class="row">
-			<a href="https://sourceforge.net/projects/mjograph/files/latest/download">
-		<button type="button" class="btn btn-primary btn-lg">Download ver-0.5 (beta)</button></a>
-
-		</div>
-<br/>
-
-	</div>
-</div>
-
-
-
-
-<!-- Services -->
-<div class="services-container">
-	<div class="container">
-
-
-		<div class="row">
-
-			<div class="col-sm-3">
-				<div class="service wow fadeInUp">
-					<div class="service-icon"><i class="fa fa-child"></i></div>
-					<h3>新しいmjograph</h3>
-
-					<p class="feat-bun">
-					10年前に生まれた<a href="http://www.ochiailab.dnj.ynu.ac.jp/mjograph/">mjograph</a>は、
-					何度もバージョンアップを重ねることで完成形に至り、
-					ありがたいことに様々な分野の研究者から高い評判を頂くようになりました。
-					その一方で、徐々に時代に合わない点も見られるようになり、一から作り直すことを決意しました。
-					このたびリリースするSuper-Mjographは、Swiftで書かれたMacネイティブのアプリです。
-					mjographで慣れ親しんだ操作感はそのままに、数々の新機能をお楽しみ下さい。
-
-					</p>
+						</div>
+					</div>
 				</div>
 			</div>
 
 
 
-			<div class="col-sm-9">
-				<div class="service wow fadeInUp">
-					<div class="service-icon"><i class="fa fa-pagelines"></i></div>
-					<h3>設計方針</h3>
-						<dl class="feat-bun">
-							<dt>研究者やエンジニアにとって使いやすいこと</dt>
-							<dd>エクセルは身近なグラフ作成ツールですが、研究者向けとは言えません。
-								Super-Mjographは、一研究者である作者が、研究者にとって使いやすいように設計したアプリケーションです。</dd>
-							<br/>
-
-							<dt>GUIで直感的にプロットする</dt>
-							<dd>gnuplotやmatplotlibなどのコマンド型のツールで疲弊している方々に、
-								GUIでサクサクっとプロットするためのソリューションを提供します。
-								コマンドを調べる手間を省いて研究を加速しましょう。
-							</dd>
-							<br/>
-
-							<dt>最低限のコマンドインターフェイスも備える</dt>
-							<dd>プログラムの出力を直接描画したいときなど、コマンド操作が有効なのも事実です。
-							Super-Mjographではコマンドインターフェイスも備えていますので、コマンドからデータを読み込んで、あとは
-							GUIでカスタマイズという使い方ができます。
-							</dd>
-							<br/>
-
-							<dt>可視化までの操作ステップを最小化する</dt>
-							<dd>
-								研究とは理論と検証の繰り返しですが、
-								数値データの可視化に手間取っていては、本質的な思考に集中することができません。
-								Super-Mjographは最小限の労力でこれを実現します。
-								とりあえずデータをドロップすればグラフが描画され、その後いくらでもカスタマイズできるという設計になっています。
-							</dd>
-							<br/>
-
-							<dt>
-								見た目の美しさにこだわること
-							</dt>
-							<dd>
-								美しいグラフは見る者を惹き付けます。逆にダサいグラフは論文の評判を損なう恐れさえあります。
-								さすがに自動で完璧なグラフに仕上げることは無理ですが、
-								体裁を整える作業が苦痛にならないように配慮した設計になっています。
-							</dd>
-							<br/>
-
-							<dt>
-								安定したユーザーインターフェイス
-							</dt>
-							<dd>
-								前作mjographでインターフェイスのデザインは完成されていると思うので、今作も基本的にそれを踏襲しました。
-								今後のバージョンアップにおいても、不必要にインターフェイスを変えてユーザーを困らせるようなことはしません。
-							</dd>
-
-					</dl>
-					</div>
-				</div>
+			<br/><br/>
 
 
 
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<!--
-		<div class="work-container">
-			<div class="container">
+			<!-- Footer -->
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3 footer-box wow fadeInUp">
 
-				<div class="row">
-					<div class="col-sm-3">
-						<div class="work wow fadeInUp">
-							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
-							<h3>シンプルなことはシンプルに</h3>
-							<p>普通のグラフ(折れ線 and/or マーク)を手際よく描けることが、地味ながら最大の特長です。</p>
-							<div class="work-bottom">
-								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
-
+							<h4>開発フェーズ</h4>
+							<div class="footer-box-text flickr-feed">
+								<p><big>βバージョン</big><br/>Ver-0.7, 公開日 2017/11/1, 有効期限 2018/1/12</p>
 							</div>
 						</div>
-					</div>
 
-					<div class="col-sm-3">
-						<div class="work wow fadeInUp">
-							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
-							<h3>複雑な作業もストレスフリーに</h3>
-							<p>グラフを美しく仕上げるためには複雑な作業を伴いますが、できるだけスムーズにできるように配慮。</p>
-							<div class="work-bottom">
-								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
+						<div class="col-sm-3 footer-box wow fadeInUp">
 
-							</div>
-						</div>
-					</div>
+							<h4>リンク</h4>
+							<div class="footer-box-text">
 
 
-					<div class="col-sm-3">
-						<div class="work wow fadeInUp">
-							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
-							<h3>ドロー機能</h3>
-							<p>ドロー専用ソフト並みのドロー機能を備えていますので、注釈をつけるためにわざわざ別のソフトを使う必要がありません。</p>
-							<div class="work-bottom">
-								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
-
-							</div>
-						</div>
-					</div>
-
-
-					<div class="col-sm-3">
-						<div class="work wow fadeInUp">
-							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
-							<h3>数式の埋め込み</h3>
-							<p>Latexのコマンドで数式が書けます。しかも、Super-Mjograph自身で数式を認識し、Latexのインストールは一切不要。</p>
-							<div class="work-bottom">
-								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
-
-							</div>
-						</div>
-					</div>
-
-
-					<div class="col-sm-3">
-						<div class="work wow fadeInUp">
-							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
-							<h3>画像エクスポート</h3>
-							<p>画像の出力形式はPNG/EPS/PDFに対応。直接クリップボードに書き出すこともできます。</p>
-							<div class="work-bottom">
-								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
-
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<div class="work wow fadeInUp">
-							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
-							<h3>高速レンダリングモード</h3>
-							<p>ビッグデータ時代。100万サンプルを超えるデータも低遅延で描画。<br/><br/></p>
-							<div class="work-bottom">
-								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
-
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<div class="work wow fadeInUp">
-							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
-							<h3>関数のプロット</h3>
-							<p>数値データのプロットと合わせて関数のプロットもできます。<br/><br/></p>
-							<div class="work-bottom">
-								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
-
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<div class="work wow fadeInUp">
-							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
-							<h3>スクリプティング</h3>
-							<p>AppleScriptを通じて操作ができます。しかもデータ読み込みは高速です。Pythonインターフェイスを公開中</p>
-							<div class="work-bottom">
-								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
-
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<div class="work wow fadeInUp">
-							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
-							<h3>様々なプロット</h3>
-							<p>カラーマップ、バブルプロットなどなど、様々な可視化にご利用下さい。<br/><br/></p>
-							<div class="work-bottom">
-								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
-
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<div class="work wow fadeInUp">
-							<a href="assets/img/slider/sc1.png"><img src="assets/img/slider/sc1.png" alt="Lorem Website"></a>
-							<h3>金融データにも</h3>
-							<p>時系列データのプロットにも適しています。<br/><br/></p>
-							<div class="work-bottom">
-								<a class="big-link-2 view-work" href="assets/img/slider/sc1.png"><i class="fa fa-check"></i></a>
-
-							</div>
-						</div>
-					</div>
-
-
-				</div>
-			</div>
-		</div> -->
-
-
-		<br/><br/>
-
-
-
-
-		<!-- Footer -->
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-3 footer-box wow fadeInUp">
-
-						<h4>開発フェーズ</h4>
-						<div class="footer-box-text flickr-feed">
-							<p><big>βバージョン</big><br/>Ver-0.5, 公開日 2017/10/22, 有効期限 2018/1/12</p>
-						</div>
-					</div>
-
-					<div class="col-sm-3 footer-box wow fadeInUp">
-
-						<h4>リンク</h4>
-						<div class="footer-box-text">
-
-
-							<dl>
-								<dt>機能説明 <span class="glyphicon glyphicon-search"></span></dt>
-								<dd>Super-Mjogrpahの機能の紹介ページです。</dd>
-								<br/>
-								<dt>Wiki <span class="glyphicon glyphicon-user"></span></dt>
-								<dd>
-									使い方についてまとめています。
-								</dd>
-								<br/>
-								<dt>Forum <span class="glyphicon glyphicon-home"></span></dt>
-								<dd>
-									バグや機能リクエストを書いて下さい。
-								</dd>
-							</dl>
-
-
-
-						</div>
-					</div>
-
-
-					<div class="col-sm-3 footer-box wow fadeInDown">
-						<h4>価格</h4>
-						<div class="footer-box-text footer-box-text-subscribe">
-							<div class="well">
 								<dl>
-									<dt></dt><dd><strong>無料</strong></dd>
+									<!-- <dt>機能説明 <span class="glyphicon glyphicon-search"></span></dt>
+									<dd>Super-Mjogrpahの機能の紹介ページです。</dd>
+									<br/> -->
+
+									<dt><a href="https://github.com/moykeen/supermjo-doc/wiki">Wiki <span class="glyphicon glyphicon-user"></span></a></dt>
+									<dd>
+										使い方についてまとめています。
+									</dd>
+									<br/>
+									<dt><a href="https://github.com/moykeen/supermjo-doc/issues">Forum <span class="glyphicon glyphicon-home"></span></a></dt>
+									<dd>
+										バグや機能リクエストを書いて下さい。
+									</dd>
 								</dl>
+
+
+
+							</div>
+						</div>
+
+
+						<div class="col-sm-3 footer-box wow fadeInDown">
+							<h4>価格</h4>
+							<div class="footer-box-text footer-box-text-subscribe">
+								<div class="well">
+									<dl>
+										<dt></dt><dd><strong>無料</strong></dd>
+									</dl>
+								</div>
+
 							</div>
 
 						</div>
 
-					</div>
 
 
+						<div class="col-sm-3 footer-box wow fadeInDown">
+							<h4>お問い合わせ</h4>
+							<div class="footer-box-text footer-box-text-contact">
+								<p><img src="assets/img/email.gif"/></p>
 
-					<div class="col-sm-3 footer-box wow fadeInDown">
-						<h4>お問い合わせ</h4>
-						<div class="footer-box-text footer-box-text-contact">
-									<p><img src="assets/img/email.gif"/></p>
-
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12 wow fadeIn">
-						<div class="footer-border"></div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-sm-7 footer-copyright wow fadeIn">
-						<p>(C) Makoto Tanahashi, 2017</p>
+					<div class="row">
+						<div class="col-sm-12 wow fadeIn">
+							<div class="footer-border"></div>
+						</div>
 					</div>
 
-					<!-- <div class="col-sm-5 footer-social wow fadeIn">
+					<div class="row">
+						<div class="col-sm-7 footer-copyright wow fadeIn">
+							<p>(C) Makoto Tanahashi, 2017</p>
+						</div>
+
+						<!-- <div class="col-sm-5 footer-social wow fadeIn">
 						<a href="#"><i class="fa fa-facebook"></i></a>
 						<a href="#"><i class="fa fa-dribbble"></i></a>
 						<a href="#"><i class="fa fa-twitter"></i></a>
