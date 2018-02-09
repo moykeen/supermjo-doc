@@ -26,7 +26,10 @@ a {
 }
 a:hover, a:focus { color: #888; text-decoration: none; }
 
-strong { font-weight: bold; }
+strong {
+  font-weight: bold;
+  color: #ff9933;
+}
 
 img { max-width: 100%; }
 
@@ -160,7 +163,7 @@ ul.navbar-nav li.active .dropdown-menu > .active > a:focus { background: #1874CD
 .navbar>.container .navbar-brand { margin-left: 0; }
 
 .navbar-brand {
-	width: 427px;  
+	width: 427px;
 	height: 106px;
 	background: url(../img/logo1.png) left center no-repeat;
 	text-indent: -99999px;
